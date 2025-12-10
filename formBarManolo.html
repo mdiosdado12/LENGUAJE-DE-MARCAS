@@ -1,0 +1,123 @@
+//Formulario de contacto Manolo
+  <form action="#" method="post">
+
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" name="nombre" required>
+  <br>
+  <br>
+  <label for="correo">Correo Electrónico</label>
+  <input type="email" id="correo" name="correo" required>
+  <br>
+  <br>
+
+  <label for="telefono">Teléfono</label>
+  <input type="tel" id="telefono" name="telefono">
+<br>
+<br>
+  <label for="asunto">Asunto</label>
+  <input type="text" id="asunto" name="asunto">
+  <br>
+  <br>
+
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+
+
+
+// Estilos para el formulario de contacto
+
+.Contacto2 form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+.Contacto2 label {
+  font-weight: bold;
+}
+.Contacto2 input,
+.Contacto2 textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mensaje-enviar {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.mensaje-enviar textarea {
+  flex: 1;
+}
+
+.mensaje-enviar button {
+  padding: 0.7rem 1.2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mensaje-enviar button:hover {
+  background-color: #333;}
+
+
+  //Reservas
+  <h2>Reserva</h2>
+  <form>
+    <!-- Número de personas -->
+    <label for="personas">Número de personas:</label>
+    <select id="personas" name="personas" required>
+      <option value="">Selecciona...</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <br><br>
+
+    <!-- Hora de la reserva -->
+    <label for="hora">Hora de la reserva:</label>
+    <select id="hora" name="hora" required>
+      <option value="">Selecciona...</option>
+      <!-- Franja 12:00 a 16:00 -->
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="14:00">14:00</option>
+      <option value="15:00">15:00</option>
+      <option value="16:00">16:00</option>
+      <!-- Franja 20:00 a 23:00 -->
+      <option value="20:00">20:00</option>
+      <option value="21:00">21:00</option>
+      <option value="22:00">22:00</option>
+      <option value="23:00">23:00</option>
+    </select>
+
+    <br><br>
+
+    <!-- Fecha de la reserva -->
+    <label for="fecha">Fecha de la reserva:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <br><br>
+
+    <input type="submit" value="Reservar">
+  </form>
